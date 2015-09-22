@@ -8,11 +8,12 @@ section{
 	padding: 150px 0 !important;
 }
 .tile {
+  border-radius: 1em;
   width: 100%;
   display: inline-block;
   box-sizing: border-box;
   background: #fff;
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 30px;
 }
 .tile .title {
@@ -43,9 +44,13 @@ section{
 	text-align: center;
 }
 .steps-anchor{
-	text-decoration: none;
-	cursor: auto;
+	text-decoration: none !important;
+	cursor: text;
+	color: #18bc9c !important;
 }
+.steps-anchor h1{
+	font-size: 32px !important;
+}	
 .steps-row{
 	margin-top: 2em;
 }
@@ -62,4 +67,24 @@ footer .footer-below{
 }
 .btn-outline{
 	color: #777777;
+}
+.get-started-how-it-works{
+	text-align: center; 
+	margin-top: 3em;
+}
+.get-started-how-it-works a.get-started,
+.get-started-how-it-works a.get-started:hover,
+.get-started-how-it-works a.get-started:focus{
+	background: #FFF; 
+	/* color: #18bc9c;  */
+	color: #777777 !important;
+	font-weight: bold; 
+	width: 8em; 
+	padding: 0.5em; 
+	font-size: 30px; 
+	border-radius: 0.5em;
+}
+.get-started-how-it-works a.get-started:hover,
+.get-started-how-it-works a.get-started:focus{
+	color: #555555 !important;
 }
