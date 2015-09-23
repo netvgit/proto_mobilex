@@ -1,0 +1,17 @@
+#preview {
+	border:	solid thin silver;
+	padding: 2em;
+	margin:	2% 8.5%;
+	text-align:	center;
+	box-shadow:	0 0 2em silver;
+	background: #FFF;
+}					
+#preview {
+	padding-bottom: 100px;
+}
+#preview-coverflow .cover {
+	cursor: pointer;
+	width: 320px;
+	height: 400px;
+	box-shadow:	0 0 4em 1em white;
+}
