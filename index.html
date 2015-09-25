@@ -20,6 +20,7 @@
 
     <!-- Custom Fonts -->
     <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/three-quarters.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -35,7 +36,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-nobg">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -45,26 +46,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">XMobile</a>
+                <a class="navbar-brand" href="#page-top"><img src="resources/images/logo.png" alt=""/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                   
+                    <li class="page-scroll active">
+                        <a href="#page-top">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#whatWeDo">What We Do?</a>
+                        <a href="#howItWorks">How It Works</a>
+                    </li>
+					<li>
+                        <a href="#" class="openFileDialog">Upload Video</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#sampleReport">Sample Report</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#howItWorks">How It Works?</a>
-                    </li>
+                        <a href="#contactus">Contact Us</a>
+                    </li><!-- 
                     <li class="">
-                        <a href="javascript:void(0);">Get Started</a>
-                    </li>
+                        <a href="javascript:void(0);">Signup</a>
+                    </li> -->
                     <li class="">
-                        <a href="javascript:void(0);">Login/Signup</a>
+                        <a href="javascript:void(0);">Login</a>
                     </li>
                 </ul>
             </div>
@@ -79,124 +87,115 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="name site-name">XMOBILE</span>
-                        <hr class="star-light">
-                        <span class="skills site-name-intro">User Experience is what makes all the difference!!</span>
+                        <div class="site-intro name-medium ">Upload a video of your mobile app</div>
+                        <div class="site-intro name-large">And See Magic!</div>
+                        <div class="name-small">We analyse your app video frame-by-frame and report your mobile app performance like no other</div>
+						<div class="three-quarters-loader">
+							Loading…
+						</div>
+						<button class="btn btn-xmobile openFileDialog upload-button">Upload Video</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- What We Do Grid Section -->
-    <section id="whatWeDo">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>What We Do?</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-			<div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>XMobile helps you in improving your app usability by assessing your app technically and sharing with you reports based on strong parameters which can make huge difference in your app's user experience.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Using our services, you not only get reports on your app usability but also an option of comparing your app with your peers to know where your app lags behind and where does it lead.</p>
-                </div>
-                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
     <!-- How It Works Section -->
-    <section class="success" id="howItWorks">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>How It Works?</h2>
-                    <hr class="star-light">
-                </div>
-            </div>            
-            <div class="row steps-row">
-                <div class="col-sm-3">
-				  <div class="tile text-center">
-					<a class="fa-links steps-anchor" href="javascript:void(0);">
-						<h1>Upload<br />Your App</h1>
-							<i class="fa fa-3x fa-cloud-upload"></i>
-					</a>
+    <section id="howItWorks">
+        <div class="container-fluid">
+           <div class="row">
+                <div class="col-sm-6 col-md-3">
+				  <div class=" text-center">
+						<i class="fa fa-3x fa-cloud-upload"></i>
+						<h5>Upload your app video</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled.</p>
 				  </div>
 				</div>
-                <div class="col-sm-3">
-				  <div class="tile text-center">
-					<a class="fa-links steps-anchor" href="javascript:void(0);">
-						<h1>Review<br />Reports</h1>
-							<i class="fa fa-3x fa-star-half-empty"></i>
-					</a>
+                <div class="col-sm-6 col-md-3">
+				  <div class=" text-center">
+						<i class="fa fa-3x fa-mobile"></i>
+						<h5>Review Reports</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled.</p>
 				  </div>
 				</div>
-                <div class="col-sm-3">
-				  <div class="tile text-center">
-					<a class="fa-links steps-anchor" href="javascript:void(0);">
-						<h1>Compare<br />With Peers</h1>
-							<i class="fa fa-3x fa-mobile"></i>
-					</a>
+                <div class="col-sm-6 col-md-3">
+				  <div class=" text-center">
+						<i class="fa fa-3x fa-star-half-empty"></i>
+						<h5>Compare with Peers</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled.</p>
 				  </div>
 				</div>
-                <div class="col-sm-3">
-				  <div class="tile text-center">
-					<a class="fa-links steps-anchor" href="javascript:void(0);">
-						<h1>Delight<br />Your Users</h1>
-							<i class="fa fa-3x fa-users"></i>
-					</a>
+                <div class="col-sm-6 col-md-3">
+				  <div class=" text-center">
+						<i class="fa fa-3x fa-users"></i>
+						<h5>Delight Your Users</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled.</p>
 				  </div>
 				</div>
             </div>
-			<div class="row get-started-how-it-works" style="">
-				<a class="btn btn-primary get-started" href="javascript:void(0);" role="button">Upload File</a>
-				&nbsp;
-				<a class="btn btn-primary get-started" href="reports.html" role="button">Browse Reports</a>
-			</div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Located At</h3>
-                        <p>Address Line 1<br />Address Line 2<br />Address Line 3, USA</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Follow Us</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Us</h3>
-                        <p>Mail: contact@xmobile.com<br />Phone: xxx-xxx-xxxx</p>
-                    </div>
-                </div>
+	
+	<!-- Sample Report Section -->
+    <section id="sampleReport">
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col-lg-12">
+					<div class="text-center">
+						<p>Want to know how Facebook app fared well among its competing apps?</p>
+						<button class="btn btn-xmobile" onclick="javascript:window.location = 'reports.html';">View Sample Report</button>
+					</div>
+			   </div>
             </div>
         </div>
+    </section>
+	
+	<!-- Contact Us Section -->
+    <section id="contactus">
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col-lg-12">
+					<div class="company-address-holder">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d475.84500309790695!2d78.4489833065441!3d17.423300458350084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1443093396437" width="100%" height="400" frameborder="0" style="border:0;margin-bottom:-5px;pointer-events:none" allowfullscreen></iframe>
+						<div class="company-address">	
+							<h4>GET IN TOUCH</h4>
+							<div class="media">
+								<div class="media-left">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="media-body">
+									<p><strong>Pramati Technologies Private Limited</strong></p> 
+									<p>Mid Town 6-3-348 Road No. 1, Banjara Hills, Hyderabad, Telangana 500016</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<i class="fa fa-phone-square"></i>
+								</div>
+								<div class="media-body">
+									<p><strong>Phone:</strong></p> 
+									<p>+91 40 3355 2000</p>
+								</div>
+							</div>
+							<div class="media">
+								<div class="media-left">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="media-body">
+									<p><strong>Website:</strong></p> 
+									<p>www.pramati.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			   </div>
+            </div>
+        </div>
+    </section>
+	
+	
+    <!-- Footer -->
+    <footer>
         <div class="footer-below">
             <div class="container">
                 <div class="row">
@@ -215,6 +214,10 @@
         </a>
     </div>
 	
+	<form role="form" action="" method="">
+		<input type="file" id="upload_my_file">
+	</form>
+	
     <!-- jQuery -->
     <script src="resources/js/jquery-1.11.3.js"></script>
 
@@ -232,7 +235,36 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="resources/js/theme.js"></script>
-
+	
+	<!-- Open File Chooser -->
+	<script>
+		$(document).ready(function(){
+			$(".openFileDialog").click(function(e){
+				e.preventDefault();
+				if($(this).hasClass('redirect-btn')){
+					window.location = "reports.html";
+				}
+				else{
+					$("#upload_my_file").trigger('click');
+				}
+			});
+			
+			$("#upload_my_file").change(function(e){
+				$('html,body').animate({ scrollTop: 0 }, 'slow');
+				$(".upload-button").removeClass("redirect-btn")
+				$(".upload-button").css("visibility","hidden");
+				$(".three-quarters-loader").show();
+				setTimeout(function(){
+					$(".three-quarters-loader").hide();
+					$(".upload-button").css("visibility","visible");
+					$(".upload-button").text("View Report");
+				},3000);
+				$("#upload_my_file").val('');	
+				$(".upload-button").addClass("redirect-btn").removeClass("openFileDialog");				
+			});
+		});
+	</script>
+	
 </body>
 
 </html>

@@ -82,7 +82,10 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /* background: #18bc9c; Commented by Design Team */
+	background: #000 url('../images/home-banner.png') no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 header .container {
@@ -353,7 +356,10 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+	color: #fff!important;
+	background-color: #000!important;
+    /* background-color: #233140; Commented by Design Team */
+	
 }
 
 .btn-social {
@@ -456,4 +462,181 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+/* Design Team */
+#upload_my_file {
+	display: none;
+}
+
+.three-quarters-loader{
+	display: none;
+	position: absolute!important;
+    left: 0;
+    right: 0;
+}
+
+.btn-xmobile{
+	text-transform: uppercase;
+	background: #18bc9c;
+	border: 1px solid #18bc9c;
+	padding: 10px 25px;
+}
+
+.btn-xmobile:hover,
+.btn-xmobile:focus{
+	color: #ffffff;
+}
+
+header .btn-xmobile{
+	margin-top: 80px;
+}
+
+.navbar-nobg{
+	background: transparent;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active{
+	padding: 5px;
+	color: #ffffff;
+}
+
+.navbar-shrink{
+	background: rgba(0,0,0,0.7);
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+@media(max-width:1023px){
+	.navbar-brand{
+		max-width:150px;
+	}
+	.navbar-brand img{
+		width: 100%;
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav>li>a:focus{
+		font-size: 12px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.navbar-default .navbar-nav>.active>a{
+	padding-bottom: 5px;
+	border-bottom: 3px solid #18bc9c;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #ffffff;
+	background: none;
+}
+
+header .site-intro{
+	text-transform: uppercase;
+}
+
+header .name-medium{
+	font-size: 2.4em;
+	margin-bottom: 15px;
+}
+
+header .name-large{
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+header .name-small{
+	font-size: 1.2em;
+	opacity: 0.8;
+}
+
+#howItWorks{
+	background: #f7fcff;
+}
+
+#howItWorks i{
+	color: #fff;
+	background: #18bc9c;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+#howItWorks h5{
+	margin-bottom: 20px;
+}
+
+#howItWorks p{
+	color: #727270;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+#sampleReport{
+	color: #ffffff;
+	background: #000 url('../images/sample-banner.png') no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#sampleReport button{
+	margin-top: 40px;
+}
+
+#contactus{
+	padding: 0!important;
+	position: relative;
+}
+
+#contactus .container-fluid{
+	padding: 0;
+}
+
+#contactus .company-address-holder{
+	position: relative;
+}
+
+#contactus .company-address{
+	position: absolute;
+	background: rgba(255,255,255,.8);
+	padding: 30px;
+	left: 215px;
+	width: 350px;
+	height: 260px;
+	top: 50%;
+	margin-top: -130px;
+}
+
+#contactus .company-address p{
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+@media(max-width:768px){
+	#contactus .company-address{
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+	}
 }

@@ -36,8 +36,6 @@
 
 <body id="page-top" class="base-reports">
 
-    
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-base-reports">
         <div class="container-fluid">
@@ -49,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="resources/images/logo.png" alt="" class="logo"/></a>
+                <a class="navbar-brand" href="index.html"><img src="resources/images/logo_reports_1.png" alt="" class="logo"/></a>
             </div>
 			
 			<div class="collapse navbar-collapse" id="base-reports-menu">
@@ -63,11 +61,11 @@
 					<li>
 						<span class="nav-label">Check for</span>
 						<div class="btn-group switch-phone-group" data-toggle="buttons">
-							<label class="btn btn-xmobile">
-								<input type="radio" id="android" name="phone-swith" value="" /> ANDROID
-							</label> 
 							<label class="btn btn-xmobile active">
-								<input type="radio" id="ios" name="phone-swith" value="" checked /> IOS
+								<input type="radio" id="android" name="phone-swith" value="" checked /> IOS
+							</label> 
+							<label class="btn btn-xmobile">
+								<input type="radio" id="ios" name="phone-swith" value="" /> ANDROID 
 							</label> 
 						</div>
 					</li>
@@ -80,217 +78,183 @@
         <!-- /.container-fluid -->
     </nav>
 	
-	<!-- Dashboard -->
-	<div class="dashboard-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-4">
-					<div class="report-box box-large">
-						<div class="media">
-							<div class="media-left media-middle">
-								<div class="chart" id="graph" data-percent="75" data-size="120"></div>
+	<!--Report Content-->
+	<div class="container-fluid report-container">
+		<div class="row">
+			<!--left section-->
+			<div class="col-md-6 col-lg-6 left-section left-section-ref">
+				<!--Image Slider-->
+				<div class="row">
+					<div id="preview">
+						<div id="preview-coverflow">
+							<img data-img-name="Screen 1" data-param1-val="20" data-param2-val="36" data-param3-val="43" data-param4-val="1" height="228px" width="128px" class="cover" src="resources/images/app_images/619.jpg"/>
+							<img data-img-name="Screen 2" data-param1-val="11" data-param2-val="43" data-param3-val="13" data-param4-val="2" height="228px" width="128px" class="cover" src="resources/images/app_images/635.jpg"/>
+							<img data-img-name="Screen 3" data-param1-val="41" data-param2-val="56" data-param3-val="12" data-param4-val="3" height="228px" width="128px" class="cover" src="resources/images/app_images/645.jpg"/>
+							<img data-img-name="Screen 4" data-param1-val="45" data-param2-val="23" data-param3-val="54" data-param4-val="4" height="228px" width="128px" class="cover" src="resources/images/app_images/650.jpg"/>
+							<img data-img-name="Screen 5" data-param1-val="62" data-param2-val="21" data-param3-val="26" data-param4-val="5" height="228px" width="128px" class="cover" src="resources/images/app_images/656.jpg"/>
+							<img data-img-name="Screen 6" data-param1-val="51" data-param2-val="44" data-param3-val="37" data-param4-val="6" height="228px" width="128px" class="cover" src="resources/images/app_images/661.jpg"/>
+							<img data-img-name="Screen 7" data-param1-val="19" data-param2-val="51" data-param3-val="63" data-param4-val="7" height="228px" width="128px" class="cover" src="resources/images/app_images/666.jpg"/>
+							<img data-img-name="Screen 8" data-param1-val="27" data-param2-val="56" data-param3-val="29" data-param4-val="8" height="228px" width="128px" class="cover" src="resources/images/app_images/671.jpg"/>
+							<img data-img-name="Screen 9" data-param1-val="54" data-param2-val="21" data-param3-val="12" data-param4-val="9" height="228px" width="128px" class="cover" src="resources/images/app_images/676.jpg"/>
+							<img data-img-name="Screen 10" data-param1-val="11" data-param2-val="30" data-param3-val="23" data-param4-val="10" height="228px" width="128px" class="cover" src="resources/images/app_images/682.jpg"/>
+							<!-- 
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/812.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/973.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/978.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/983.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/989.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/994.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/999.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1004.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1020.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1025.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1030.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1035.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1041.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1046.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1051.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1056.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1061.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1067.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1072.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1077.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1082.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1087.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1093.jpg"/>
+							<img height="50%" width="50%" class="cover" src="resources/images/app_images/1098.jpg"/> 
+							-->
+						</div>
+					</div>
+				</div>
+				<!--Image Slider-->
+				<!--Size Toggle-->
+				<div class="row text-center">
+					<div class="btn-group switch-size-group" data-toggle="buttons">
+						<label class="btn btn-xmobile active half">
+							<input type="radio" name="switch-size" value="0.5" checked /> 0.5 X
+						</label> 
+						<label class="btn btn-xmobile full">
+							<input type="radio" name="switch-size" value="1" /> 1 X
+						</label> 
+					</div>
+				</div>
+				<!--Size Toggle-->
+				<!--Image Preview-->
+				<div class="row text-center">
+					<img class="img-preview-ref" height="568px" width="320px" src="resources/images/app_images/619.jpg"/>
+				</div>
+				<!--Image Preview-->
+			</div>
+			<!-- /. left section-->
+			<!--right section-->
+			<div class="col-md-6 col-lg-6 right-section right-section-ref">
+				<div class="row">
+					<div class="col-md-3 col-lg-3 pull-right compare-watch-buttons watch-button">WATCH VIDEO</div>
+					<div class="col-md-3 col-lg-3 pull-right compare-watch-buttons compare-button">COMPARE APP</div>
+				</div>
+				<div class="row">
+					<h3 class="screen-name screen-name-ref"></h3>
+					<h5><span class="param-name">Text to Speech Ratio</span><span class="param-value param1-val"></span></h5>
+					<h5><span class="param-name">Color Palette</span><span class="param-value param2-val"></span></h5>
+					<h5><span class="param-name">Color Contrast</span><span class="param-value param3-val"></span></h5>
+				</div>				
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<div class="report-box box-small">
+							<div class="media media-orange">
+								<div class="media-left media-middle">
+									<img class="media-object" src="resources/images/1_1.png" alt="">
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading">LAUNCH TIME</h5>
+									<h4>70 millisec</h4>
+								</div>
 							</div>
-							<div class="media-body">
-								<h3 class="media-heading">OVERALL PERFORMANCE SCORE</h3>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="report-box box-small">
+							<div class="media media-blue">
+								<div class="media-left media-middle">
+									<img class="media-object" src="resources/images/2_1.png" alt="">
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading">BACK STAY</h5>
+									<h4>0 Activity</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="report-box box-small">
+							<div class="media media-purple">
+								<div class="media-left media-middle">
+									<img class="media-object" src="resources/images/3_1.png" alt="">
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading">OVERDRAWS</h5>
+									<h4>6</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="spacer20"></div>
+						<div class="report-box box-small">
+							<div class="media media-teal">
+								<div class="media-left media-middle">
+									<img class="media-object" src="resources/images/4_1.png" alt="">
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading">GC CONCURRENT</h5>
+									<h4>56</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="spacer20"></div>
+						<div class="report-box box-small">
+							<div class="media media-yellow">
+								<div class="media-left media-middle">
+									<img class="media-object" src="resources/images/5_1.png" alt="">
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading">ALERT</h5>
+									<h4>GC ALLOC</h4>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-8">
-					<div class="row">
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="report-box box-small">
-								<div class="media media-orange">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/1.png" alt="">
-									</div>
-									<div class="media-body">
-										<h5 class="media-heading">LAUNCH TIME</h5>
-										<h4>70 millisec</h4>
-									</div>
+				<div class="row">
+				
+				</div>
+				<div class="row">
+					
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-lg-8">
+						<div class="report-box box-large">
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="chart" id="graph" data-percent="75" data-size="120"></div>
 								</div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="report-box box-small">
-								<div class="media media-blue">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/2.png" alt="">
-									</div>
-									<div class="media-body">
-										<h5 class="media-heading">BACK STAY</h5>
-										<h4>0 Activity</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="report-box box-small">
-								<div class="media media-purple">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/3.png" alt="">
-									</div>
-									<div class="media-body">
-										<h5 class="media-heading">OVERDRAWS</h5>
-										<h4>6</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					<!-- </div>
-					<div class="row"> -->
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="spacer20"></div>
-							<div class="report-box box-small">
-								<div class="media media-teal">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/4.png" alt="">
-									</div>
-									<div class="media-body">
-										<h5 class="media-heading">GC CONCURRENT</h5>
-										<h4>56</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="spacer20"></div>
-							<div class="report-box box-small">
-								<div class="media media-yellow">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/5.png" alt="">
-									</div>
-									<div class="media-body">
-										<h5 class="media-heading">ALERT</h5>
-										<h4>GC ALLOC</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-4 col-md-4">
-							<div class="spacer20"></div>
-							<div class="report-box box-small">
-								<div class="media media-dark">
-									<div class="media-icon media-left media-middle">
-										<img class="media-object" src="resources/images/6.png" alt="">
-									</div>
-									<div class="media-body">
-										<h4 class="media-link">
-											<a href="#">WATCH APP VIDEO</a>
-										</h4>
-									</div>
+								<div class="media-body">
+									<h3 class="media-heading">OVERALL PERFORMANCE SCORE</h3>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- /. right section-->
 		</div>
 	</div>
-	
-		<!--Image Slider-->	
-		<div class="row">
-			<div id="preview">
-				<div id="preview-coverflow">
-					<img data-param1-val="1" data-param2-val="1" data-param3-val="1" data-param4-val="1" height="568px" width="320px" class="cover" src="resources/images/app_images/619.jpg"/>
-					<img data-param1-val="2" data-param2-val="2" data-param3-val="2" data-param4-val="2" height="568px" width="320px" class="cover" src="resources/images/app_images/635.jpg"/>
-					<img data-param1-val="3" data-param2-val="3" data-param3-val="3" data-param4-val="3" height="568px" width="320px" class="cover" src="resources/images/app_images/645.jpg"/>
-					<img data-param1-val="4" data-param2-val="4" data-param3-val="4" data-param4-val="4" height="568px" width="320px" class="cover" src="resources/images/app_images/650.jpg"/>
-					<img data-param1-val="5" data-param2-val="5" data-param3-val="5" data-param4-val="5" height="568px" width="320px" class="cover" src="resources/images/app_images/656.jpg"/>
-					<img data-param1-val="6" data-param2-val="6" data-param3-val="6" data-param4-val="6" height="568px" width="320px" class="cover" src="resources/images/app_images/661.jpg"/>
-					<img data-param1-val="7" data-param2-val="7" data-param3-val="7" data-param4-val="7" height="568px" width="320px" class="cover" src="resources/images/app_images/666.jpg"/>
-					<img data-param1-val="8" data-param2-val="8" data-param3-val="8" data-param4-val="8" height="568px" width="320px" class="cover" src="resources/images/app_images/671.jpg"/>
-					<img data-param1-val="9" data-param2-val="9" data-param3-val="9" data-param4-val="9" height="568px" width="320px" class="cover" src="resources/images/app_images/676.jpg"/>
-					<img data-param1-val="10" data-param2-val="10" data-param3-val="10" data-param4-val="10" height="569px" width="320px" class="cover" src="resources/images/app_images/682.jpg"/><!-- 
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/812.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/973.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/978.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/983.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/989.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/994.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/999.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1004.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1020.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1025.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1030.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1035.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1041.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1046.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1051.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1056.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1061.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1067.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1072.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1077.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1082.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1087.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1093.jpg"/>
-					<img height="50%" width="50%" class="cover" src="resources/images/app_images/1098.jpg"/> -->
-				</div>
-				<div class="row" style="margin-top:2%;">
-					<button type="button" class="btn btn-default" id="first-button">First</button>
-					<input type="text" class="form-control" style="width: 200px; display: inline;" placeholder="Enter Image Number" id="go-button-value" />
-					<button type="button" class="btn btn-default" id="go-button">Go!</button>
-					<button type="button" class="btn btn-default" id="last-button">Last</button>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-6" style="margin: 2% 25% 0%;">
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<h5>Parameter</h5>
-							<span class="param1-val"></span>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<h5>Parameter</h5>
-							<span class="param2-val"></span>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<h5>Parameter</h5>
-							<span class="param3-val"></span>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<h5>Parameter</h5>
-							<span class="param4-val"></span>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>	
-	<!--Image Slider-->
-	
+	<!--Report Content-->
 	
 	<!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Located At</h3>
-                        <p>Address Line 1<br />Address Line 2<br />Address Line 3, USA</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Follow Us</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Us</h3>
-                        <p>Mail: contact@xmobile.com<br />Phone: xxx-xxx-xxxx</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer>
         <div class="footer-below">
             <div class="container">
                 <div class="row">

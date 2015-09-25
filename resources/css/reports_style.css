@@ -1,17 +1,83 @@
+.left-section{
+	background: #1f1f1f none repeat scroll 0 0;
+}
+.right-section{
+	padding-left: 50px;
+}
 #preview {
-	border:	solid thin silver;
+	/* border:	solid thin silver;
 	padding: 2em;
-	margin:	2% 8.5%;
 	text-align:	center;
 	box-shadow:	0 0 2em silver;
-	background: #FFF;
+	background: #FFF; */
+	margin:	4% auto 0;
+	width: 500px;
 }					
 #preview {
-	padding-bottom: 100px;
+	/* padding-bottom: 100px; */
+	/* padding-bottom: 20px; */
 }
 #preview-coverflow .cover {
 	cursor: pointer;
-	width: 320px;
-	height: 600px;
-	box-shadow:	0 0 4em 1em white;
+	width: 128px;
+	height: 228px;
+	/* box-shadow:	0 0 4em 1em white; */
+}
+.report-container{
+	background: #ffffff none repeat scroll 0 0;
+	margin: 110px 25px 25px;
+}
+.compare-watch-buttons{
+	color: #ffffff;
+	height: 40px;
+	padding: 10px;
+	text-align: center;	
+}
+.compare-button{
+	background: #38495a none repeat scroll 0 0;
+}
+.watch-button{
+	background: #00B9AD none repeat scroll 0 0;
+}
+.left-section .btn-xmobile {
+  border: 2px solid #18bc9c;
+  text-transform: uppercase;
+  background: #1f1f1f none repeat scroll 0 0;
+}
+.left-section .btn-xmobile.active {
+  background: #00b9ad none repeat scroll 0 0;
+  box-shadow: none;
+  color: #ffffff;
+}
+.left-section .switch-size-group label {
+  color: #bebebe;
+  display: block;
+  padding: 8px 0;
+  width: 110px;
+  font-weight: 700;
+}
+.left-section .switch-size-group .half{
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+.left-section .switch-size-group .full{
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.left-section .switch-size-group{
+	padding: 30px 0;
+}
+.screen-name{
+	color: #00B9AD;
+}
+.param-name {
+	color: #c0c0c0;
+	display: inline-block;
+	width: 200px;
+	font-weight: normal;
+}
+.param-value{
+	display: inline-block;
+	color: #1F1F1F;
+	font-weight: normal;
 }
