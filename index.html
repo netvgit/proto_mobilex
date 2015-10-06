@@ -11,21 +11,18 @@
 
     <title>XMobile</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- Bootstrap Core CSS -->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
     <link href="resources/css/theme.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="resources/css/three-quarters.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link href="resources/css/three-quarters.css" rel="stylesheet" type="text/css">	
+	
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -49,10 +46,9 @@
                 <a class="navbar-brand" href="#page-top"><img src="resources/images/logo.png" alt=""/></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- The nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                   
+                <ul class="nav navbar-nav navbar-right">                   
                     <li class="page-scroll active">
                         <a href="#page-top">Home</a>
                     </li>
@@ -62,8 +58,8 @@
 					<li>
                         <a href="#" class="openFileDialog">Upload Video</a>
                     </li>
-					<li class="page-scroll">
-                        <a href="#sampleReport">Sample Report</a>
+					<li>
+                        <a href="reports.html">Sample Report</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contactus">Contact Us</a>
@@ -191,8 +187,7 @@
 			   </div>
             </div>
         </div>
-    </section>
-	
+    </section>	
 	
     <!-- Footer -->
     <footer>
@@ -225,46 +220,13 @@
     <script src="resources/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="resources/js/jquery.easing.min.js"></script>
     <script src="resources/js/classie.js"></script>
     <script src="resources/js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="resources/js/jqBootstrapValidation.js"></script>
-    <script src="resources/js/contact_me.js"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="resources/js/theme.js"></script>
-	
-	<!-- Open File Chooser -->
-	<script>
-		$(document).ready(function(){
-			$(".openFileDialog").click(function(e){
-				e.preventDefault();
-				if($(this).hasClass('redirect-btn')){
-					window.location = "reports.html";
-				}
-				else{
-					$("#upload_my_file").trigger('click');
-				}
-			});
-			
-			$("#upload_my_file").change(function(e){
-				$('html,body').animate({ scrollTop: 0 }, 'slow');
-				$(".upload-button").removeClass("redirect-btn")
-				$(".upload-button").css("visibility","hidden");
-				$(".three-quarters-loader").show();
-				setTimeout(function(){
-					$(".three-quarters-loader").hide();
-					$(".upload-button").css("visibility","visible");
-					$(".upload-button").text("View Report");
-				},3000);
-				$("#upload_my_file").val('');	
-				$(".upload-button").addClass("redirect-btn").removeClass("openFileDialog");				
-			});
-		});
-	</script>
-	
+	<script src="resources/js/home.js"></script>
+
 </body>
 
 </html>

@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
 body {
     overflow-x: hidden;
@@ -639,4 +634,95 @@ header .name-small{
 		top: 0;
 		bottom: 0;
 	}
+}
+
+.site-name{
+	font-size: 6em !important;
+}
+.site-name-intro{
+	font-size: 2.5em !important;
+}
+section{
+	padding: 150px 0 !important;
+}
+.tile {
+  border-radius: 1em;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.tile .title {
+  margin-top: 0px;
+}
+.tile.purple, .tile.blue, .tile.red, .tile.orange, .tile.green {
+  color: #fff;
+}
+.tile.purple {
+  background: #5133AB;
+}
+.tile.red {
+  background: #AC193D;
+}
+.tile.green {
+  background: #00A600;
+}
+.tile.blue {
+  background: #2672EC;
+}
+.tile.orange {
+  background: #DC572E;
+}
+.font-white{
+	color: #FFF !important;
+}
+.text-center{
+	text-align: center;
+}
+.steps-anchor{
+	text-decoration: none !important;
+	cursor: text;
+	color: #18bc9c !important;
+}
+.steps-anchor h1{
+	font-size: 32px !important;
+}	
+.steps-row{
+	margin-top: 2em;
+}
+footer .footer-above{
+	color: #777777;
+	background-color: #FFF;
+}
+footer .footer-below{
+	color: #777777;
+	background-color: #F8F8F8;
+}
+.btn-social{
+	border: 2px solid #777777;
+}
+.btn-outline{
+	color: #777777;
+}
+.get-started-how-it-works{
+	text-align: center; 
+	margin-top: 3em;
+}
+.get-started-how-it-works a.get-started,
+.get-started-how-it-works a.get-started:hover,
+.get-started-how-it-works a.get-started:focus{
+	background: #FFF; 
+	/* color: #18bc9c;  */
+	color: #777777 !important;
+	font-weight: bold; 
+	width: 9.5em; 
+	padding: 0.5em; 
+	font-size: 30px; 
+	border-radius: 0.5em;
+}
+.get-started-how-it-works a.get-started:hover,
+.get-started-how-it-works a.get-started:focus{
+	color: #555555 !important;
 }
