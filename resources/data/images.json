@@ -1,0 +1,81 @@
+{
+	"appParamData": {
+		"appParam1Val": "70",
+		"appParam2Val": "0",
+		"appParam3Val": "6",
+		"appParam4Val": "56"
+	},
+	"imageData": [
+		{
+			"name": "Screen 1",
+			"param1Val": "29",
+			"param2Val": "37",
+			"param3Val": "34",
+			"param4Val": "67",
+			"src": "resources/images/app_images/619.jpg"
+		},{
+			"name": "Screen 2",
+			"param1Val": "23",
+			"param2Val": "33",
+			"param3Val": "78",
+			"param4Val": "45",
+			"src": "resources/images/app_images/635.jpg"
+		},{
+			"name": "Screen 3",
+			"param1Val": "54",
+			"param2Val": "74",
+			"param3Val": "78",
+			"param4Val": "56",
+			"src": "resources/images/app_images/645.jpg"
+		},{
+			"name": "Screen 4",
+			"param1Val": "32",
+			"param2Val": "76",
+			"param3Val": "58",
+			"param4Val": "76",
+			"src": "resources/images/app_images/650.jpg"
+		},{
+			"name": "Screen 5",
+			"param1Val": "34",
+			"param2Val": "54",
+			"param3Val": "76",
+			"param4Val": "89",
+			"src": "resources/images/app_images/656.jpg"
+		},{
+			"name": "Screen 6",
+			"param1Val": "12",
+			"param2Val": "56",
+			"param3Val": "87",
+			"param4Val": "44",
+			"src": "resources/images/app_images/661.jpg"
+		},{
+			"name": "Screen 7",
+			"param1Val": "88",
+			"param2Val": "55",
+			"param3Val": "64",
+			"param4Val": "87",
+			"src": "resources/images/app_images/666.jpg"
+		},{
+			"name": "Screen 8",
+			"param1Val": "19",
+			"param2Val": "47",
+			"param3Val": "38",
+			"param4Val": "24",
+			"src": "resources/images/app_images/671.jpg"
+		},{
+			"name": "Screen 9",
+			"param1Val": "21",
+			"param2Val": "33",
+			"param3Val": "54",
+			"param4Val": "66",
+			"src": "resources/images/app_images/676.jpg"
+		},{
+			"name": "Screen 10",
+			"param1Val": "23",
+			"param2Val": "65",
+			"param3Val": "35",
+			"param4Val": "88",
+			"src": "resources/images/app_images/682.jpg"
+		}
+	]
+}

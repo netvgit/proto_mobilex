@@ -1,50 +1,51 @@
 $(function() {
-	if ($.fn.reflect) {
-		//$('#preview-coverflow .cover').reflect();	// only possible in very specific situations
-	}
-	var coverflowObj = $('#preview-coverflow').coverflow({
-		index:			5,
-		density:		2,
-		innerOffset:	30,
-		innerScale:		.7,
-		animateStep:	function(event, cover, offset, isVisible, isMiddle, sin, cos) {
-			if (isVisible) {
-				if (isMiddle) {
-					$(cover).css({
-						'filter':			'none',
-						'-webkit-filter':	'none'
-					});
-				} else {
-					var brightness	= 1 + Math.abs(sin),
-						contrast	= 1 - Math.abs(sin),
-						filter		= 'contrast('+contrast+') brightness('+brightness+')';
-					$(cover).css({
-						'filter':			filter,
-						'-webkit-filter':	filter
-					});
-				}
-			}
-		},
-		change: function(event, cover, index){
-		},
-		confirm: function(){
-		},
-		select: function(event, image, index){
-			var imgObj = $(image),
-				previewImg = $('img.img-preview-ref'),
-				sizeRadioVal = $('input[type=radio][name="switch-size"]:checked:first').val();
-			$('span.param1-val').html(imgObj.attr('data-param1-val'));
-			$('span.param2-val').html(imgObj.attr('data-param2-val'));
-			$('span.param3-val').html(imgObj.attr('data-param3-val'));
-			$('.screen-name-ref').html(imgObj.attr('data-img-name'));
-			previewImg.attr('src', imgObj.attr('src'));
-			//modifySectionsSizeImageEnlarge();
-		}
-	});
 	
-	$('input[type=radio][name="switch-size"]').off('change').on('change', function() {
-		modifySectionsSizeImageEnlarge();
-	});
+	function coverflow(){
+		
+		if ($.fn.reflect) {
+			//$('#preview-coverflow .cover').reflect();	// only possible in very specific situations
+		}
+		var coverflowObj = $('#preview-coverflow').coverflow({
+			index:			5,
+			density:		2,
+			innerOffset:	30,
+			innerScale:		.7,
+			animateStep:	function(event, cover, offset, isVisible, isMiddle, sin, cos) {
+				if (isVisible) {
+					if (isMiddle) {
+						$(cover).css({
+							'filter':			'none',
+							'-webkit-filter':	'none'
+						});
+					} else {
+						var brightness	= 1 + Math.abs(sin),
+							contrast	= 1 - Math.abs(sin),
+							filter		= 'contrast('+contrast+') brightness('+brightness+')';
+						$(cover).css({
+							'filter':			filter,
+							'-webkit-filter':	filter
+						});
+					}
+				}
+			},
+			change: function(event, cover, index){
+			},
+			confirm: function(){
+			},
+			select: function(event, image, index){
+				var imgObj = $(image),
+					previewImg = $('img.img-preview-ref'),
+					sizeRadioVal = $('input[type=radio][name="switch-size"]:checked:first').val();
+				$('span.param1-val').html(imgObj.attr('data-param1-val'));
+				$('span.param2-val').html(imgObj.attr('data-param2-val'));
+				$('span.param3-val').html(imgObj.attr('data-param3-val'));
+				$('.screen-name-ref').html(imgObj.attr('data-img-name'));
+				previewImg.attr('src', imgObj.attr('src'));
+				//modifySectionsSizeImageEnlarge();
+			}
+		});	
+	}
+	
 	function modifySectionsSizeImageEnlarge(){
 		
 		var sizeRadioVal = $('input[type=radio][name="switch-size"]:checked:first').val(),
@@ -65,6 +66,19 @@ $(function() {
 			previewImg.attr('width', '320px');
 		}		
 		coverflowObj.refresh();
+	}
+	
+	function populateAppParamData(appParamData){
+		if(!appParamData){
+			return;
+		}
+		var keyName,
+			className;
+		for(var i=1; i<5; i++){
+			keyName = 'appParam'+i+'Val';
+			className = '.app-param'+i+'-val';
+			$(className).html(appParamData[keyName]);
+		}
 	}
 	
 	/*Following function is for drawing the circle at Overall Performance Metric*/
@@ -111,5 +125,35 @@ $(function() {
 
 		drawCircle('#EBEBEB', options.lineWidth, 100 / 100);
 		drawCircle('#91C46B', options.lineWidth, options.percent / 100);
-	})();
+	}());
+	
+	(function fetchImageData(){
+		
+		$.ajax('resources/data/images.json', {
+			data:{
+				appId: 1
+			},
+			error: function(){
+				
+			},
+			success: function(response){		
+				var imgTmp	 = 	_.template($('script.template-coverflow-images').html());
+				$('#preview-coverflow').html(
+					imgTmp({imageArr: response.imageData})
+				);
+				populateAppParamData(response.appParamData);
+				/* $('#preview-coverflow').html(
+					_.template($('script.template-coverflow-images').html(), {imageArr: response})
+				); */
+				coverflow();
+				$('img.img-preview-ref')
+					.attr('src', response.imageData[5].src)
+					.show();
+			}
+		});		
+	}());
+
+	$('input[type=radio][name="switch-size"]').off('change').on('change', function() {
+		modifySectionsSizeImageEnlarge();
+	});	
 });
