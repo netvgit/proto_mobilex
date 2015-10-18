@@ -48,8 +48,16 @@
 			<div class="collapse navbar-collapse" id="base-reports-menu">
 				<ul class="nav navbar-nav navbar-left">
 					<li>
-						<a class="navbar-search" href="#"><img src="resources/images/search.png" alt="" class="nav-search-icon"/></a>
-						<span class="nav-label-dark">FACEBOOK APP</span>
+						<!-- <a class="navbar-search" href="#"><img src="resources/images/search.png" alt="" class="nav-search-icon"/></a>
+						<span class="nav-label-dark">FACEBOOK APP</span> -->
+						<div class="input-group search-box">
+						  <input type="text" class="form-control" placeholder="" value="FACEBOOK APP" aria-describedby="basic-addon2">
+						  <div class="input-group-btn">
+							   <button class="btn btn-info">
+							   <span class="glyphicon glyphicon-search"></span>
+							   </button>
+						   </div>
+						</div>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -77,7 +85,7 @@
 	<div class="container-fluid report-container">
 		<div class="row">
 			<!--left section-->
-			<div class="col-md-6 col-lg-6 left-section left-section-ref">
+			<div class="col-md-7 col-lg-7 left-section left-section-ref">
 				<!--Image Slider-->
 				<div class="row">
 					<div id="preview">
@@ -87,38 +95,19 @@
 					</div>
 				</div>
 				<!--Image Slider-->
-				<!--Size Toggle-->
-				<div class="row text-center">
-					<div class="btn-group switch-size-group" data-toggle="buttons">
-						<label class="btn btn-xmobile active half">
-							<input type="radio" name="switch-size" value="0.5" checked /> 0.5 X
-						</label> 
-						<label class="btn btn-xmobile full">
-							<input type="radio" name="switch-size" value="1" /> 1 X
-						</label> 
-					</div>
-				</div>
-				<!--Size Toggle-->
-				<!--Image Preview-->
-				<div class="row text-center">
-					<img class="collapse img-preview-ref" height="568px" width="320px" />
-				</div>
-				<!--Image Preview-->
 			</div>
 			<!-- /. left section-->
 			<!--right section-->
-			<div class="col-md-6 col-lg-6 right-section right-section-ref">
+			<div class="col-md-5 col-lg-5 right-section right-section-ref">
 				<div class="row">
-					<div class="col-md-3 col-lg-3 pull-right compare-watch-buttons watch-button">WATCH VIDEO</div>
-					<div class="col-md-3 col-lg-3 pull-right compare-watch-buttons compare-button">COMPARE APP</div>
-				</div>
-				<div class="row">
-					<h3 class="screen-name screen-name-ref"></h3>
+					<h3 class="screen-name screen-name-ref" style="margin-bottom: 18px;">Current Screen</h3>
 					<h5><span class="param-name">Text to Space Ratio</span><span class="param-value param1-val"></span></h5>
 					<h5><span class="param-name">Color Palette</span><span class="param-value param2-val"></span></h5>
 					<h5><span class="param-name">Color Contrast</span><span class="param-value param3-val"></span></h5>
-				</div>				
+				</div>		
+				<div class="row col-lg-12 col-md-12" style="padding: 0px;"><hr style="margin-top: 15px; margin-bottom: 27px;"></div>	
 				<div class="row">
+					<h3 class="screen-name">App Performance</h3>
 					<div class="col-md-6 col-lg-6">
 						<div class="report-box box-small">
 							<div class="media media-orange">
@@ -186,26 +175,25 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-				
-				</div>
-				<div class="row">
-					
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-lg-8">
-						<div class="report-box box-large">
+					<div class="col-md-6 col-lg-6">
+						<div class="report-box box-small">
 							<div class="media">
 								<div class="media-left media-middle">
-									<div class="chart" id="graph" data-percent="75" data-size="120"></div>
+									<div class="chart" id="graph" data-percent="75" data-size="68"></div>
 								</div>
-								<div class="media-body">
-									<h3 class="media-heading">OVERALL PERFORMANCE SCORE</h3>
+								<div class="media-body overall-score">
+									<h4 class="media-heading">OVERALL SCORE</h4>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row">
+				   <div class="col-lg-12" style="padding-left: 0;">
+						<div class="pull-left compare-app">
+							<button class="btn btn-xmobile">Compare App</button>
+						</div>
+				   </div>
 				</div>
 			</div>
 			<!-- /. right section-->
@@ -214,7 +202,7 @@
 	<!--Report Content-->
 	
 	<!-- Footer -->
-    <footer>
+    <!-- <footer>
         <div class="footer-below">
             <div class="container">
                 <div class="row">
@@ -224,14 +212,14 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 	
 	
 	<script type="text/template" class="template-coverflow-images">
 		<%
 			_.each(imageArr, function(imgDetails){				
 		%>	
-			<img data-img-name="<%= imgDetails['name'] %>" data-param1-val="<%= imgDetails['param1Val'] %>" data-param2-val="<%= imgDetails['param2Val'] %>" data-param3-val="<%= imgDetails['param3Val'] %>" data-param4-val="<%= imgDetails['param4Val'] %>" height="228px" width="128px" class="cover" src="<%= imgDetails['src'] %>" />
+			<img data-img-name="<%= imgDetails['name'] %>" data-param1-val="<%= imgDetails['param1Val'] %>" data-param2-val="<%= imgDetails['param2Val'] %>" data-param3-val="<%= imgDetails['param3Val'] %>" data-param4-val="<%= imgDetails['param4Val'] %>" height="533px" width="300px" class="cover" src="<%= imgDetails['src'] %>" />
 		<%	
 			});
 		%>

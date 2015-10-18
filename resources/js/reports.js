@@ -9,7 +9,7 @@ $(function() {
 			index:			5,
 			density:		2,
 			innerOffset:	30,
-			innerScale:		.7,
+			innerScale:		.3,
 			animateStep:	function(event, cover, offset, isVisible, isMiddle, sin, cos) {
 				if (isVisible) {
 					if (isMiddle) {
@@ -40,7 +40,7 @@ $(function() {
 				$('span.param2-val').html(imgObj.attr('data-param2-val'));
 				$('span.param3-val').html(imgObj.attr('data-param3-val'));
 				$('.screen-name-ref').html(imgObj.attr('data-img-name'));
-				previewImg.attr('src', imgObj.attr('src'));
+				//previewImg.attr('src', imgObj.attr('src'));
 				//modifySectionsSizeImageEnlarge();
 			}
 		});	
@@ -146,14 +146,11 @@ $(function() {
 					_.template($('script.template-coverflow-images').html(), {imageArr: response})
 				); */
 				coverflow();
-				$('img.img-preview-ref')
-					.attr('src', response.imageData[5].src)
-					.show();
 			}
 		});		
 	}());
 
-	$('input[type=radio][name="switch-size"]').off('change').on('change', function() {
+	/* $('input[type=radio][name="switch-size"]').off('change').on('change', function() {
 		modifySectionsSizeImageEnlarge();
-	});	
+	});	 */
 });
