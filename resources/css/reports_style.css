@@ -374,8 +374,18 @@ div.chart canvas { display: block; position: absolute; top: 0; left: 0; }
 .left-section .switch-size-group{
 	padding: 30px 0;
 }
-.screen-name{
+.screen-app-name{
 	color: #00B9AD;
+}
+.screen-name{
+	margin-bottom: 18px;
+}
+.separator{
+	padding: 0px;
+}
+.separator hr{
+	margin-top: 15px; 
+	margin-bottom: 27px;
 }
 .param-name {
 	color: #BEBEBE;
@@ -394,7 +404,7 @@ footer .footer-below .container{
 }
 
 .compare-app{
-	margin: 40px 0 10px;
+	margin: 40px 0 10px -12px;
 	color: #FFF;
 	outline: none;
 }
